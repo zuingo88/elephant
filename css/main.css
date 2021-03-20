@@ -90,10 +90,10 @@ button:active {
 
 /* HEADER */
 header {
-    position: fixed;
+    position: fixed; z-index: 999;
     height: 55px; width: 100%; min-width: 270px;
-    background: rgb(41,28,76);
-    background: linear-gradient(180deg, rgba(41,28,76,1) 0%, rgba(9,9,121,1) 85%, rgba(0,0,0,1) 100%);
+    background: rgb(19,19,91);
+    background: linear-gradient(180deg, rgba(19,19,91,1) 0%, rgba(8,8,65,1) 85%, rgba(0,0,0,1) 100%);
     margin-bottom: 70px;
 }
 
@@ -241,11 +241,11 @@ input:checked + .slider:before {
 
 /* FOOTER */
 footer {
-    position: fixed;
+    position: fixed; z-index: 999;
     bottom: 0;
     width: 100%; min-width: 270px;
-    background: rgb(41,28,76);
-    background: linear-gradient(0deg, rgba(41,28,76,1) 0%, rgba(9,9,121,1) 85%, rgba(0,0,0,1) 100%);
+    background: rgb(19,19,91);
+    background: linear-gradient(0deg, rgba(19,19,91,1) 0%, rgba(8,8,65,1) 85%, rgba(0,0,0,1) 100%);
 }
 
 footer .margin_container {height: 55px;}
