@@ -130,6 +130,7 @@ header .logo span {
 /* MAIN */
 main {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* SECTION FIRST */
@@ -281,7 +282,7 @@ input:checked + .slider:before {
 }
 
 /* SECTION FOUR */
-#four {
+#fourth {
     width: 45%;
 }
 
@@ -304,4 +305,24 @@ footer {
 
 footer .margin_container {
     height: 55px;
+}
+
+
+/* VERSIONE MOBILE */
+@media all and (max-width: 375px) {
+
+    #first, #second, #third, #fourth {
+        width: 100%;
+        margin: auto;
+    }
+
+    #first {
+        margin-bottom: 20px;
+    }
+
+    #first .card {
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
