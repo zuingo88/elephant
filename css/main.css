@@ -308,8 +308,27 @@ footer .margin_container {
 }
 
 
-/* VERSIONE MOBILE */
-@media all and (max-width: 375px) {
+/* VERSIONE XS */
+@media all and (max-width: 340px) {
+
+    #first, #second, #third, #fourth {
+        width: 100%;
+        margin: auto;
+    }
+
+    #first {
+        margin-bottom: 20px;
+    }
+
+    #first .card {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* VERSIONE S */
+@media all and (min-width: 341px) and (max-width: 510px) {
 
     #first, #second, #third, #fourth {
         width: 100%;
@@ -324,5 +343,24 @@ footer .margin_container {
         width: 50%;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+}
+
+/* VERSIONE M */
+@media all and (min-width: 511px) and (max-width: 900px) {
+
+    #first, #second, #third, #fourth {
+        width: 100%;
+        margin: auto;
+    }
+
+    #first {
+        margin-bottom: 20px;
+    }
+
+    /* #first .card {
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px; */
     }
 }
