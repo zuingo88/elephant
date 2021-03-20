@@ -1,5 +1,5 @@
 body {
-     background-image: linear-gradient(to right bottom, #000064, #000a69, #00136e, #001c73, #002378, #00297e, #013083, #033689, #033d92, #03449a, #024ba3, #0052ac);
+       background-image: linear-gradient(to right bottom, #000000, #180610, #230d1e, #2a1230, #2a1946, #281f51, #23255d, #182b69, #212e6c, #29306e, #303371, #363673);
 }
 
 * {
@@ -8,8 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-
-/* STRUCTURAL */
+/* STRUCTURAL RULES*/
 .screen {
     height: 100vh;
     width: 100%;
@@ -17,7 +16,7 @@ body {
     color: #D3D3D3;
 }
 
-.total_container {
+.margin_container {
     width: 90%;
     max-width: 1180px;
     margin: auto;
@@ -67,9 +66,28 @@ body {
     text-align: center;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button:active {
+    border: solid 1px transparent;
+    scale: 1.1;
 }
 
 .big_btn {
@@ -92,9 +110,12 @@ a {
     margin-bottom: 5px;
 }
 
-
 /* HEADER */
 header {
+    position: fixed;
+    height: 55px; width: 100%;
+    background: rgb(41,28,76);
+    background: linear-gradient(180deg, rgba(41,28,76,1) 0%, rgba(9,9,121,1) 85%, rgba(0,0,0,1) 100%);
     margin-bottom: 70px;
 }
 
@@ -106,9 +127,15 @@ header .logo span {
     text-transform: uppercase;
 }
 
+/* MAIN */
+main {
+    padding-top: 100px;
+}
+
 /* SECTION FIRST */
 #first {
     width: 45%;
+    margin-bottom: 30px;
 }
 
 .logo_big {
@@ -159,31 +186,31 @@ header .logo span {
 /* SECTION SECOND */
 #second {
     width: 45%;
+    margin-bottom: 30px;
 }
 
-.deposit, .withdraw {
+.black_square {
     background-color: #1F1F1F;
     padding: 15px;
     margin-bottom: 30px;
 }
 
-.deposit > *, .withdraw > * {
+
+.black_square > * {
     display: block;
 }
 
-#second h3 {
+.black_square h3 {
     color: #7BA3CF;
-    font-size: 24px;
-    font-weight: normal;
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-#depAmo, #witAmo {
+.black_square input.big_btn {
     padding-left: 10px;
 }
 
-#second .small_btn {
+.black_square .small_btn {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -248,3 +275,33 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* SECTION THIRD */
+#third {
+    width: 45%;
+}
+
+/* SECTION FOUR */
+#four {
+    width: 45%;
+}
+
+.about h3 {
+    margin-bottom: 30px;
+}
+
+.about a {
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgb(41,28,76);
+    background: linear-gradient(0deg, rgba(41,28,76,1) 0%, rgba(9,9,121,1) 85%, rgba(0,0,0,1) 100%);
+}
+
+footer .margin_container {
+    height: 55px;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,47 +11,54 @@
         crossorigin="anonymous" />
     <title>zuingo88 - Elephant</title>
 </head>
+
 <body>
 
+    <!-- screen -->
     <div class="screen">
 
-        <div class="total_container">
+        <!-- header -->
+        <header>
+            <div class="margin_container flex justify_bet align_cen text_normal">
 
-            <header>
-                <div class="container flex justify_bet align_cen text_normal">
-                    <div class="logo">
-                        <a class="flex align_cen" href="">
-                            <img src="img/kisspng-the-elephants-paper-asian-elephant-graphite-sketch-white-elephant-5a9eab1b383b12.4464526515203479312303.png"
-                                alt="">
-                            <span>Elephant.money</span>
-                        </a>
-                    </div>
-                    <div class="hamburger">
-                        <a href="">
-                            <span><i class="fas fa-bars"></i></span>
-                        </a>
-                    </div>
+                <!-- logo -->
+                <div class="logo">
+                    <a class="flex align_cen" href="" title="HOME" name="home">
+                        <img src="img/kisspng-the-elephants-paper-asian-elephant-graphite-sketch-white-elephant-5a9eab1b383b12.4464526515203479312303.png"
+                            alt="">
+                        <span>Elephant.money</span>
+                    </a>
                 </div>
-            </header>
 
-            <main class="flex justify_bet">
+                <!-- hamburger -->
+                <div class="hamburger">
+                    <a href="">
+                        <span><i class="fas fa-bars"></i></span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="">
+
+            <div class="margin_container flex wrap justify_bet">
+
                 <!-- SECTION FIRST -->
                 <section id="first">
                     <div class="container flex column justify_cen align_cen">
                         <div class="logo_big">
-                            <img id=""
-                                src="img/cube.png"
-                                alt="">
+                            <img id="" src="img/cube.png" alt="">
                         </div>
                         <p class="text_normal">2% Instant and daily drip rewards</p>
-
+                
                         <button id="connectBtn" class="text_small">Connected</button>
                     </div>
-
+                
                     <p class="text_big t_center">≈161.408% APY</p>
-
-                    <!-- fine blocco card -->
-                    <div class="blocco_card flex wrap justify_bet"> 
+                
+                    <!-- blocco card -->
+                    <div class="blocco_card flex wrap justify_bet">
                         <div class="card flex column justify_cen align_cen">
                             <div class="circle_card">
                                 <img src="img/market-analysis.png" alt="">
@@ -106,9 +114,12 @@
                         <button class="big_btn text_small">Claim</button>
                     </div>
                 </section>
-
+                
+                <!-- SECTION SECOND -->
                 <section id="second" class="">
-                    <div class="deposit">
+                
+                    <!-- deposit -->
+                    <div class="deposit black_square">
                         <h3>Deposit</h3>
                         <label for="depAmo" class="text_small">Amount</label>
                         <input id="depAmo" class="big_btn text_big" type="text" placeholder="WBNB">
@@ -122,8 +133,9 @@
                             </label>
                         </div>
                     </div>
-                    
-                    <div class="withdraw">
+                
+                    <!-- withdraw -->
+                    <div class="withdraw black_square">
                         <h3>Withdraw</h3>
                         <label for="witAmo" class="text_small">Amount</label>
                         <input id="witAmo" class="big_btn text_big" type="text" placeholder="WBNB">
@@ -131,11 +143,57 @@
                         <button id="witBtn" class="small_btn text_small">WITHDRAW</button>
                     </div>
                 </section>
-            </main>
+                
+                <!-- SECTION THIRD -->
+                <section id="third">
+                
+                    <!-- TRANSFER -->
+                    <div class="transfer black_square">
+                        <h3>Transfer</h3>
+                        <label for="recipient" class="text_small">Recipient</label>
+                        <input id="recipient" class="big_btn text_big" type="text" placeholder="Address">
+                        <label for="transAmo" class="text_small">Amount</label>
+                        <input id="transAmo" class="big_btn text_big" type="text" placeholder="WBNB">
+                        <span class="text_small">Transfered WBNB:</span>
+                        <button id="traBtn" class="small_btn text_small">TRANSFER</button>
+                    </div>
+                </section>
+                
+                <!-- SECTION FOUR -->
+                <section id="four">
+                
+                    <!-- about -->
+                    <div class="about">
+                        <h3>About</h3>
+                        <p class="text_small">ELEPHANT.MONEY is a future Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Minus suscipit ut saepe? Beatae illo aliquam magnam officia nisi laboriosam voluptatem
+                            animi repellat, ratione doloremque. Laborum veniam excepturi rem distinctio quisquam!</p>
+                
+                        <span class="text_small">Contract</span>
+                        <a class="text_small"
+                            href="https://www.youtube.com/watch?v=8a4Mub7pkxs">https://www.youtube.com/watch?v=8a4Mub7pkxs</a>
+                    </div>
+                </section>
+            </div><!-- fine margin_container -->
+        </main>
 
-        </div>
+        <footer>
+            <div class="margin_container flex justify_bet align_cen">
 
-    </div>
-    
+                <!-- my_world -->
+                <div class="my_world">
+                    <span class="text_normal">UTENT: </span>
+                    <span id="utent"></span>
+                </div>
+
+                <!-- my_wallet -->
+                <div class="my_wallet">
+                    <span class="text_small">WALLET: </span>
+                    <span id="wallet"></span>
+                </div>
+            </div>
+        </footer>
+    </div><!-- fine screen -->
 </body>
+
 </html>
